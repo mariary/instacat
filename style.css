@@ -1,0 +1,149 @@
+:root {
+    --window-width: 700px;
+    --window-height: 800px;
+}
+
+* {
+    margin: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    fill: #585858
+}
+
+.icon:hover, .icon-active {
+    fill: #323232
+}
+
+.inst {
+    max-width: var(--window-width);
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.inst__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+
+.inst__content {
+    height: var(--window-height);
+    margin: 0 40px 20px;
+}
+
+.inst__content_img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.inst__slider {
+    position: relative;
+}
+
+.inst__slider_btn {
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+}
+
+.btn-right {
+    right: -60px;
+    transform: rotateZ(-90deg);
+}
+
+.disabled .icon {
+    fill: #bcbcbc;
+    transition: 500ms;
+}
+
+.btn-left {
+    left: -60px;
+    transform: rotateZ(90deg);
+}
+
+.inst__slider_list_wrapper {
+    height: calc(var(--window-width) / 4 + 30px);
+    overflow-y: hidden;
+}
+
+.inst__slider_list {
+    display: flex;
+    width: var(--window-width);
+    overflow-x: scroll;
+}
+
+.inst__slider_list_item {
+    margin: 10px 5px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    cursor: pointer;
+}
+
+.inst__slider_list_itemlist {
+
+}
+
+.inst__slider_list_item_right {
+    margin-left: calc((-1) * (var(--window-width) / 4));
+    transition: 2s;
+}
+
+.inst__slider_list_item_name {
+    margin: 10px 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.inst__slider_list_item_img {
+    width: calc(var(--window-width) / 4 - 10px);
+    height: calc(var(--window-width) / 4 - 10px);
+    background-image: url("icons/HHsxM1d4D10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.inst__slider_list_item_img:hover{
+    opacity: 0.6;
+}
+
+.filter-1 {
+    filter: saturate(180%);
+}
+
+.filter-2 {
+    filter: sepia(30%);
+}
+
+.filter-3 {
+    filter: saturate(30%);
+}
+
+.filter-4 {
+    filter: invert(30%);
+}
+
+.filter-5 {
+    filter: hue-rotate(270deg);
+}
+
+.filter-6 {
+    filter: grayscale(100%);
+}
+
+
+.active {
+    font-weight: 700;
+}

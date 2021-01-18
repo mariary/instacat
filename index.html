@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="inst">
+        <div class="inst__nav">
+            <button class="inst__nav_social fill">
+                <svg class="icon">
+                    <use xlink:href="sprite.svg#fill"></use>
+                </svg>
+            </button>
+            <button class="inst__nav_social scale">
+                <svg class="icon">
+                    <use xlink:href="sprite.svg#scale"></use>
+                </svg>
+            </button>
+            <button class="inst__nav_social logo">
+                <svg class="icon">
+                    <use xlink:href="sprite.svg#logo" fill="url(#linear-gradient)"></use>
+                    <defs>
+                        <linearGradient id="linear-gradient" gradientUnits="userSpaceOnUse"
+                                        gradientTransform="rotate(0)">
+                            <stop offset="0%" stop-color="#f0693e"/>
+                            <stop offset="30%" stop-color="#dd1f0c"/>
+                            <stop offset="80%" stop-color="#b53071"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </button>
+            <button class="inst__nav_social rotate">
+                <svg class="icon">
+                    <use xlink:href="sprite.svg#rotate"></use>
+                </svg>
+            </button>
+            <button class="inst__av_social flip">
+                <svg class="icon">
+                    <use xlink:href="sprite.svg#flip"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="inst__content">
+            <img src="icons/HHsxM1d4D10.jpg" alt="" class="inst__content_img" data-rotation-angel>
+        </div>
+        <div class="inst__slider">
+            <button class="inst__slider_btn btn-left disabled" onclick="Slider('left')">
+                <svg class="icon">
+                    <use xlink:href="sprite.svg#arrow"></use>
+                </svg>
+            </button>
+            <button class="inst__slider_btn btn-right" onclick="Slider('right')">
+                <svg class="icon">
+                    <use xlink:href="sprite.svg#arrow"></use>
+                </svg>
+            </button>
+            <div class="inst__slider_list_wrapper">
+                <div class="inst__slider_list">
+                    <div class="inst__slider_list_item">
+                        <div class="inst__slider_list_item_name active">
+                            Без фильтра
+                        </div>
+                        <div class="inst__slider_list_item_img_wrapper">
+                            <div class="inst__slider_list_item_img  "></div>
+                        </div>
+                    </div>
+                    <div class="inst__slider_list_item">
+                        <div class="inst__slider_list_item_name">
+                            На пляже
+                        </div>
+                        <div class="inst__slider_list_item_img_wrapper">
+                            <div class="inst__slider_list_item_img  filter-1"></div>
+                        </div>
+                    </div>
+                    <div class="inst__slider_list_item">
+                        <div class="inst__slider_list_item_name">
+                            В пустыне
+                        </div>
+                        <div class="inst__slider_list_item_img_wrapper">
+                            <div class="inst__slider_list_item_img  filter-2"></div>
+                        </div>
+                    </div>
+                    <div class="inst__slider_list_item">
+                        <div class="inst__slider_list_item_name">
+                            В Питере
+                        </div>
+                        <div class="inst__slider_list_item_img_wrapper">
+                            <div class="inst__slider_list_item_img  filter-3"></div>
+                        </div>
+                    </div>
+                    <div class="inst__slider_list_item">
+                        <div class="inst__slider_list_item_name">
+                            В Омске
+                        </div>
+                        <div class="inst__slider_list_item_img_wrapper">
+                            <div class="inst__slider_list_item_img  filter-4"></div>
+                        </div>
+                    </div>
+                    <div class="inst__slider_list_item">
+                        <div class="inst__slider_list_item_name">
+                            В Токио
+                        </div>
+                        <div class="inst__slider_list_item_img_wrapper">
+                            <div class="inst__slider_list_item_img  filter-5"></div>
+                        </div>
+                    </div>
+                    <div class="inst__slider_list_item">
+                        <div class="inst__slider_list_item_name">
+                            ЧБ
+                        </div>
+                        <div class="inst__slider_list_item_img_wrapper">
+                            <div class="inst__slider_list_item_img  filter-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="main.js" ></script>
+</html>
