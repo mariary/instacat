@@ -222,6 +222,23 @@ button {
         margin: 10px;
     }
 }
+@media  screen and (max-width: 770px) {
+
+    .inst__slider_range{
+        font-size: 10px;
+        top: -140px;
+        margin: 5px;
+    }
+    .btn-right {
+        right: -40px;
+    }
+    .btn-left {
+        left: -40px;
+    }
+    .inst__slider_btn{
+        top: 55%;
+    }
+}
 @media  screen and (max-width: 430px) {
     :root {
         --window-width: 300px;
@@ -241,5 +258,6 @@ button {
     }
     .inst__slider_btn{
         top: 55%;
+        display: none;
     }
 }
