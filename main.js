@@ -1,4 +1,8 @@
-const window_width = 700;
+let inst = document.querySelector('.inst');
+
+let width = parseInt(window.getComputedStyle(inst).width);
+
+const window_width = width;
 const s = 4;
 const part = window_width / s;
 let current_rotation = 0;
@@ -184,8 +188,6 @@ function Values() {
     }
     ;
 }
-
-
 
 Values();
 
